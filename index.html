@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md">
+        <div class="container justify-content-between">
+          <a class="navbar-brand" href="#">VESTE</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-evenly"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav w-100 justify-content-evenly ps-4 ps-md-0">
+              <li class="nav-item">
+                <a class="nav-link current" aria-current="page" href="#"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">COLLECTIONS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">LOOKBOOK</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CUSTOMER CARE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">VISIT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="cta__card_bg-white">
+        <div class="container p-0 px-md-4">
+          <article class="row cta__card" id="">
+            <figure class="col-12 col-md-6 cta__card__img">
+              <img
+                class="w-100 cta__card__img"
+                src="img/img1-large.jpg"
+                alt="Shop Women banner"
+              />
+            </figure>
+            <section class="col-12 col-md-6 cta__card_bg-rose">
+              <h1 class="cta__card__tittle">SULTRY & SMART</h1>
+              <h2 class="cta__card__desc">HOT SPRING LOOKS</h2>
+              <hr class="cta__card__hr" />
+              <a class="cta__card__link" href="#">Shop Women</a>
+            </section>
+          </article>
+        </div>
+      </div>
+
+      <div class="cta__card_bg-men">
+        <div class="container p-0 px-md-4">
+          <article class="row cta__card" id="">
+            <figure class="col-12 col-md-6 cta__card__img d-md-none">
+              <img
+                class="w-100 cta__card__img"
+                src="img/img2-large.jpg"
+                alt="Shop Women banner"
+              />
+            </figure>
+            <section class="col-12 col-md-6 cta__card_bg-green">
+              <h1 class="cta__card__tittle">ELEGANT & SLICK</h1>
+              <h2 class="cta__card__desc">GET READY FOR SUMMER</h2>
+              <hr class="cta__card__hr" />
+              <a class="cta__card__link-white" href="#">Shop Men</a>
+            </section>
+            <figure class="col-12 col-md-6 cta__card__img d-md-block d-none">
+              <img
+                class="w-100 cta__card__img"
+                src="img/img2-large.jpg"
+                alt="Shop Women banner"
+              />
+            </figure>
+          </article>
+        </div>
+      </div>
+
+      <div class="container-md justify-content-center">
+        <article class="row NA">
+          <section class="col-12 text-center">
+            <h1 class="NA_tittle">NEW ARRIVALS</h1>
+          </section>
+          <figure class="col-12 col-md-4 NA_card">
+            <img class="w-100 NA_img" src="img/img3.jpg" alt="" />
+            <figcaption class="NA_text">
+              <h2>PLEATED SKIRT</h2>
+              <p>$49.00</p>
+            </figcaption>
+          </figure>
+
+          <figure class="col-12 col-md-4">
+            <img class="w-100 NA_img" src="img/img4.jpg" alt="" />
+            <figcaption class="NA_text">
+              <h2>PLEATED SKIRT</h2>
+              <p>$49.00</p>
+            </figcaption>
+          </figure>
+
+          <figure class="col-12 col-md-4">
+            <img class="w-100 NA_img" src="img/img5.jpg" alt="" />
+            <figcaption class="NA_text">
+              <h2>PLEATED SKIRT</h2>
+              <p>$49.00</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="row">
+          <section class="col-12 text-center">
+            <div class="d-md-block d-none">
+              <h1>GET ON THE LIST</h1>
+              <p class="NA__formcta">
+                and be the first to shop new arrivals and exclusive promotions
+              </p>
+            </div>
+            <form
+              class="NA__form"
+              action="#"
+              method="post"
+              onsubmit="return validateForm()"
+            >
+              <input
+                class="NA__form__input"
+                type="email"
+                name="email"
+                id="emailInput"
+                placeholder="Enter your email here"
+                required
+              />
+              <button class="NA__form__Btn" type="submit">Subscribe Now</button>
+            </form>
+            <div class="d-md-none d-block">
+              <h1>GET ON THE LIST</h1>
+              <p class="NA__formcta">
+                and be the first to shop new arrivals and exclusive promotions
+              </p>
+            </div>
+          </section>
+        </article>
+      </div>
+      <div class="sales_bg-black p-md-5">
+        <div class="container-md my-lg-5">
+          <article class="row">
+            <figure class="col-12 col-md-6">
+              <div class="sales_img">
+                <img src="img/img6.jpg" alt="" class="w-100" />
+                <p class="sales_text">
+                  SWOON-WORTHY <br /><span class="sales_main">ACCESSORIES</span>
+                </p>
+              </div>
+            </figure>
+            <figure class="col-12 col-md-6">
+              <div class="sales_img">
+                <img src="img/img7.jpg" alt="" class="w-100" />
+                <p class="sales_text">
+                  WINTER SALE <br />
+                  <span class="sales_main">NOW 30% OFF</span>
+                </p>
+              </div>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <article class="row p-0 m-0 p-5">
+          <section class="col-12 col-lg-3">
+            <h1>VESTE</h1>
+          </section>
+          <section class="col-12 col-lg-3 footer__card">
+            <h2>CUSTOMER CARE</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Shipping policy</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Returns Policy</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Contact</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">About Us</a>
+              </li>
+            </ul>
+          </section>
+          <section class="col-12 col-lg-3 footer__card">
+            <h2>VISIT OUR STORE</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">500 Terry Francois Street</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">San Francisco. CA 94158</a>
+              </li>
+            </ul>
+          </section>
+          <section class="col-12 col-lg-3 footer__card">
+            <h2>STAY CONNECTED</h2>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#"
+                  ><i class="bi bi-twitter-x"></i
+                ></a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#"
+                  ><i class="bi bi-pinterest"></i
+                ></a>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,229 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "variables";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: $font_main;
+}
+nav {
+  background: $col_eerie-black;
+
+  .navbar-brand {
+    text-decoration: none;
+    font-size: 3rem;
+    color: $col_azure-web;
+    font-family: $font_big;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      color: darken($col_azure-web, 20%);
+    }
+  }
+
+  .navbar-toggler {
+    font-size: 2rem;
+    background: $col_azure-web;
+    border-radius: 0;
+    border: 1px solid $col_white;
+  }
+
+  .navbar-toggler-icon {
+    color: $col_white;
+  }
+
+  .nav-link {
+    color: $col_silver;
+    font-size: 1.5rem;
+
+    &.current {
+      color: $col_azure-web;
+      &:hover {
+        color: darken($col_azure-web, 20%);
+      }
+    }
+    &:hover {
+      color: darken($col_silver, 20%);
+    }
+  }
+}
+
+.cta__card {
+  padding: 0;
+  margin: 0;
+  font-family: $font_big;
+
+  &__tittle {
+    padding: 2rem 0 0 0;
+    font-size: 3rem;
+  }
+
+  &__hr {
+    width: 15%;
+    opacity: 1;
+    border: 2px solid;
+  }
+
+  &__link {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: $col_eerie-black;
+    padding: 0 0 4rem 0;
+    &-white {
+      font-size: 2.5rem;
+      text-decoration: none;
+      color: $col_white;
+      padding: 0 0 4rem 0;
+    }
+  }
+
+  &__img {
+    margin: 0;
+    padding: 0;
+  }
+  &_bg-white {
+    background-color: $col_snow;
+  }
+  &_bg-men {
+    background-color: $col_azure-web;
+  }
+  &_bg-green {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $col_ash-gray;
+    padding: 20px;
+    color: $col_white;
+  }
+  &_bg-rose {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: $col_misty-rose;
+    color: $col_eerie-black;
+  }
+}
+
+.NA {
+  font-family: $font_big;
+
+  &_tittle {
+    padding: 4rem;
+  }
+
+  &_text {
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: $col_snow;
+    font-size: 1.6rem;
+  }
+
+  &__form {
+    font-family: $font_big;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    &__input {
+      padding: 10px;
+      border: 1px solid $col_eerie-black;
+      width: 300px;
+      margin-right: 10px;
+      font-size: 1.3rem;
+    }
+    &__Btn {
+      background: $col_ash-gray;
+      color: $col_white;
+      padding: 3px;
+      border: 1px solid;
+      width: 300px;
+      margin-top: 5px;
+      margin-right: 10px;
+      font-size: 2rem;
+    }
+  }
+  &__formcta {
+    font-size: 1.6rem;
+  }
+}
+.bg-black {
+  padding: 7rem;
+}
+.sales {
+  &_img {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 0 rem;
+  }
+  &_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    white-space: nowrap;
+  }
+  &_main {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  &_bg-black {
+    background: $col_eerie-black;
+    padding: 1rem;
+  }
+}
+.footer {
+  background: $col_snow;
+  color: $col_silver;
+
+  &__card {
+    border-left: 1px solid;
+    padding: 2rem;
+
+    @media (max-width: 767px) {
+      border-left: none;
+    }
+  }
+  &__list {
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $col_silver;
+    font-size: 1.5rem;
+  }
+
+  &__social {
+    &-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    &-item {
+      margin-right: 10px;
+      font-size: 2.5rem;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: #333;
+    }
+  }
+}
